@@ -22,6 +22,7 @@ If they do have a parent account, check if c.AccountId is equal to opp.AccountId
 SOLUTION:
 
 public Boolean sameParent(Contact c, Opportunity opp) {
+    // If contact and opportunity account Id is not null then check if they are equal
     if (c.AccountId == null || opp.AccountId == null ) {
         return false;
     }
