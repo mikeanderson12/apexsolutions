@@ -20,6 +20,7 @@ the Id field on Account holds the Id of the Account.
 SOLUTION:
 
 public Boolean sameParent(Account acc, Contact con, Opportunity opp) {
+    // If contact and opportunity account Id is not null then check if they are equa
     if (con.AccountId == null || opp.AccountId == null ) {
         return false;
     }
